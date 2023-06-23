@@ -30,6 +30,8 @@ private:
 		float InitialSpeed = 9500.f/2;
 	UPROPERTY(VisibleDefaultsOnly, Category = "Combat")
 		float MaxSpeed = 9500.f;
+	UPROPERTY(EditAnywhere)
+		float Damage = 50.f;
 
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
